@@ -9,7 +9,7 @@ function SignInBox(){
                 <form action="/Login.jsx">
                     <input type="text" name="username" placeholder = "Username"/>
                     <input type="text" name="password" placeholder = "Password"/>
-                    <button type = "submit" name = "submit">Continue</button>
+                    <button type = "submit" name = "submit">Login</button>
                 </form>
 
             </div>

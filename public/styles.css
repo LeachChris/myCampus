@@ -9,6 +9,7 @@ header {
     color: #fff;
     font-family: "McLaren", cursive;
     font-weight: 200;
+    display: inline-block;
   }
 
 
@@ -34,6 +35,7 @@ footer p{
 
 .SignInBackgroundContainer{
     text-align: center;
+    margin-top: 40px;
 }
 
 input{
@@ -47,13 +49,28 @@ input{
 }
 
 button{
+    
+    color: #444444;
+    background-color: #F3F3F3;
+    border: 1px #DADADA solid;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+    font-family:  "Times New Roman", Times, serif;
+    display: block;
+    position:relative;
+    top: 100px;
+    margin: 0;
+    left: 45%;
+    padding: 10px 30px 10px 30px;
+}
 
-   font-family:  "Times New Roman", Times, serif;
-   display: block;
-   position:relative;
-   top: 100px;
-   margin: 0;
-   left: 45%;
-   padding: 10px 30px 10px 30px;
-   
+img{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    top: 10px;
+    right: 10px;
 }
