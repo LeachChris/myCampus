@@ -1,9 +1,13 @@
 header {
     background-color: #3282b8;
-    margin: auto -16px;
-    padding: 16px 32px;
+    padding: 0px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
+
+  div h1{
+      color: white;
+  }
+
 
   header h1 {
     color: #fff;
@@ -12,6 +16,9 @@ header {
     display: inline-block;
   }
 
+div h1{
+    font-family: "McLaren", cursive;
+}
 
 footer{
     clear: both;
@@ -27,10 +34,12 @@ footer p{
 }
 
 .SignInBackground{
-    background-color: #bbe1fa;
+    background-color: #3282b8;
     width: 1000px;
     height: 600px;
     display: inline-block;
+    border: 1px solid #0f4c75;
+    border-width: 1em;
 }
 
 .SignInBackgroundContainer{
@@ -51,19 +60,20 @@ input{
 button{
     
     color: #444444;
-    background-color: #F3F3F3;
+    background-color: #bbe1fa;
     border: 1px #DADADA solid;
     border-radius: 2px;
     font-weight: bold;
-    font-size: 9pt;
+    font-size: 12pt;
     outline: none;
     font-family:  "Times New Roman", Times, serif;
     display: block;
     position:relative;
     top: 100px;
     margin: 0;
-    left: 45%;
-    padding: 10px 30px 10px 30px;
+    left: 40%;
+    padding: 10px 90px 10px 90px;
+    text-align: center;
 }
 
 img{
@@ -73,4 +83,12 @@ img{
     height: 50px;
     top: 10px;
     right: 10px;
+}
+
+.AccountState{
+    position: relative;
+    text-align: center;
+    top: 100px;
+    font-family: "McLaren", cursive;
+    color: white;
 }
