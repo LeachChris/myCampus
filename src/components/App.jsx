@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Login from "./Login";
 import SignUp from "./SignUp";
-import Timeline from "./Timeline";
+import AccountSetUp from "./AccountSetUp";
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 class App extends Component {
@@ -18,14 +18,14 @@ class App extends Component {
                 <Link to ="SignUp">SignUp</Link>
               </li>
               <li>
-                <Link to ="Timeline">Timeline</Link>
+                <Link to ="AccountSetUp">Select University</Link>
               </li>
             </ul>
           </nav>
             <Switch>
              <Route path="/" component={Login} exact/>
              <Route path="/SignUp" component={SignUp}/>
-             <Route path="/Timeline" component={Timeline}/>
+             <Route path="/AccountSetUp" component={AccountSetUp}/>
            </Switch>
         </div> 
       </BrowserRouter>
