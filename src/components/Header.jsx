@@ -2,11 +2,14 @@ import React from "react";
 
 function Header(){
     return(
-        <header>
-            <img src="./logo.png" alt="Logo"></img>
-            <h1>MyCampus</h1>
-        </header>
+      <div>
+          <h1>this is the header</h1>
+      </div>
     )
+
 }
+
+
+
 
 export default Header;

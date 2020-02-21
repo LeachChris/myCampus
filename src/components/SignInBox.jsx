@@ -1,20 +1,21 @@
-import React from "react";
+import React, {Component} from "react";
 
-function SignInBox(){
-    return(
-        <div className = "SignInBackgroundContainer">
-            <div className = "SignInBackground">
+
+class SignInBox extends Component{
+    render(){
+        return(
+            <div className="signInContainer">
                 <h1>See What Other Students Are Saying About Your Campus</h1>
-                <img src="./logo.png" alt="Logo"></img>
+                <img src="./logo.png" alt="Logo" />
                 <form action="/Login.jsx">
-                    <input type="text" name="username" placeholder = "Username"/>
-                    <input type="text" name="password" placeholder = "Password"/>
-                    <button type = "submit" name = "submit">Login</button>
+                    <input type="text" name="username" placeholder="Username" />
+                    <input type="password" name="password" placeholder="Password" />
+                    <button type="submit" className="btn btn-secondary" name="submit">Login</button>
                 </form>
-                <p className = "AccountState">Don't have an account? <span>Sign Up</span></p>
             </div>
-        </div>
-    )
+                )
+    }
+
 }
 
 export default SignInBox;
