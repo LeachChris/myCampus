@@ -3,12 +3,14 @@ import './App.css';
 import UniversityConfirm from './UniversityConfirm';
 import SearchBar from './SearchBar';
 import universities from './universities';
+import Navigation from "./Navigation";
 
 
-class Integrate extends Component{
+class AccountSetUp extends Component{
   render(){
     return (
       <div className="App">
+        <Navigation/>
         <h1 className= "App-intro">
           Select a University
         </h1>
@@ -25,4 +27,4 @@ class Integrate extends Component{
   }
 }
 
-export default Integrate;
+export default AccountSetUp;
