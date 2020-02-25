@@ -1,12 +1,29 @@
-import React from "react";
+import React, {Component} from "react";
+import { HashRouter as Router, Route, Link, NavLink} from "react-router-dom";
+import SignInBox from "./SignInBox";
+import SignUpBox from  "./SignUpBox";
+import "./SignUp.css";
 
 
-function SignUp() {
+class SignUp extends Component{
+    render(){
     return(
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <Router basename="/react-auth-ui/">
+            <div className="signup">
+                <div className="PageSwitcher">
+                    <NavLink to = "/LogIn" activeClassName="PageSwitcher_Item_Active" className="PageSwitcher_Item">LogIn</NavLink>
+                    <NavLink exact to ="/"  activeClassName="PageSwitcher_Item_Active" className="PageSwitcher_Item">SignUp</NavLink>
+                </div>
+            
+            <Route exact path="/" component={SignUpBox}>
+                </Route>
+            <Route path="/LogIn" component={SignInBox}>
+                </Route>
+       
+            </div>
+        </Router>
     )
+    }
 }
 
 export default SignUp;
