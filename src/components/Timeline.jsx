@@ -1,3 +1,5 @@
+// Connection string for MongoDB: mongodb+srv://MyCampusAdmin:<password>@mycampus-whyic.mongodb.net/test?retryWrites=true&w=majority
+
 import React from "react";
 
 
