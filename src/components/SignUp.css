@@ -72,12 +72,43 @@
   
   .FormFields {
     margin-bottom: 40px;
+    text-align: center;
+    padding: 0.1px;
+    
+    
   }
+  .erroremail{
+    position: relative;
+    top: -20px;
+    margin-bottom: -20px;
+    color: #5ED0C0;
+ }
   
+ .erroruser{
+  position: relative;
+  top: -20px;
+  margin-bottom: -20px;
+  color: #5ED0C0;
+}
   
+.errorpass{
+  position: relative;
+  top: -20px;
+  color: #5ED0C0;
+  margin-bottom: -20px;
   
-  .FormField-Input {
-    width: 55%;
+} 
+ 
+.errorcon_pass{
+  position: relative;
+  top: -20px;
+  color: #5ED0C0;
+  margin-bottom: -20px;
+  
+} 
+
+.FormField-Input {
+    width: 45%;
     background-color: transparent;
     outline: none;
     border: 1px solid #445366;
@@ -86,7 +117,8 @@
     font-weight: 300;
     padding-bottom: 10px;
     margin-top: 10px;
-    opacity: 50%;
+  
+    
   }
   
   .FormField-Input::placeholder {
@@ -105,6 +137,7 @@
     margin: 0 auto;
     display: block;
   }
+
 
   a{
     color: #616E7F;
