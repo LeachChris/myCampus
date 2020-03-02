@@ -5,8 +5,14 @@ body{
 .bg-dark{
     background-color: white;
 }
-.buttons{
+
+.cards{
     display: inline-block;
+    margin: 40px;
+}
+
+.card-container{
+    display: block;
     margin: 20px;
 }
 

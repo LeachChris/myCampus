@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Homepage from "./Homepage";
 import Login from "./Login";
+import SignUp from"./SignUp";
 import AccountSetUp from "./AccountSetUp";
 import { BrowserRouter, Route } from 'react-router-dom';
 import RatingPage from './rating-page';
@@ -26,15 +27,27 @@ class App extends Component {
           }
          }/>
 
-<Route path ="/Login" exact render = {
+        <Route path ="/Login" exact render = {
           () => {
             return(<Login/>)
+          }
+         }/>
+
+        <Route path ="/SignUp" exact render = {
+          () => {
+            return(<SignUp/>)
           }
          }/>
 
         <Route path = "/RatingPage" exact render = {
           () => {
             return (<RatingPage/>)
+          }
+        }/>
+
+          <Route path = "/SignUp" exact render = {
+          () => {
+            return (<SignUp/>)
           }
         }/>
 
