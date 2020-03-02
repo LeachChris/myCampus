@@ -13,6 +13,7 @@ class Navigation extends Component{
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/AccountSetUp">Set Up</Nav.Link>
             <Nav.Link href="/Login">Login</Nav.Link>
+            <Nav.Link href="/RatingPage">Rating</Nav.Link>
         </Nav>
     </Navbar>
         )
