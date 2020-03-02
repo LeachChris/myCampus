@@ -1,35 +1,40 @@
 import React, {Component} from "react";
+import Homepage from "./Homepage";
 import Login from "./Login";
-import SignUp from "./SignUp";
 import AccountSetUp from "./AccountSetUp";
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { Navbar, Nav, Form, Button, FormControl } from "react-bootstrap";
+import  Navigation from "./Navigation";
 
-class App extends Component {
-    render() {
-      return (      
-        <BrowserRouter>
+class App extends Component { 
+  render(){
+
+    return (      
+      <BrowserRouter>
         <div>
-          <nav>
-            <ul>
-              <li>
-               <Link to ="/">Login</Link> 
-              </li>
-              <li>
-                <Link to ="SignUp">SignUp</Link>
-              </li>
-              <li>
-                <Link to ="AccountSetUp">Select University</Link>
-              </li>
-            </ul>
-          </nav>
-            <Switch>
-             <Route path="/" component={Login} exact/>
-             <Route path="/SignUp" component={SignUp}/>
-             <Route path="/AccountSetUp" component={AccountSetUp}/>
-           </Switch>
-        </div> 
+
+         <Route path ="/" exact render = {
+           () => {
+             return(<Homepage/>)
+           }
+         }/>
+
+         <Route path ="/AccountSetUp" exact render = {
+          () => {
+            return(<AccountSetUp/>)
+          }
+         }/>
+
+<Route path ="/Login" exact render = {
+          () => {
+            return(<Login/>)
+          }
+         }/>
+
+        </div>
       </BrowserRouter>
-      );
-    }
+    )
+
   }
+}
 export default App;
