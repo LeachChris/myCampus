@@ -7,7 +7,11 @@ return(
 
 <div>
     <Navigation/>
-    <h1>Welcome to MyCampus</h1>
+    <div className = "HomepageDisplay"> 
+    <img src="./logo.png" alt="Logo" className = "HomepageLogo"/>
+    <p></p>
+    </div>
+ 
 </div>
 
 
