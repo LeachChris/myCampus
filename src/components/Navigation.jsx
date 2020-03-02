@@ -3,6 +3,7 @@ import {Nav, Navbar} from "react-bootstrap";
 
 
 class Navigation extends Component{
+
     render(){
         return(
             <Navbar bg="dark" variant="dark">

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Navigation from "./Navigation";
+import Label from "./Label";
 
 class Homepage extends Component{
 render(){
@@ -7,9 +8,9 @@ return(
 
 <div>
     <Navigation/>
-    <div className = "HomepageDisplay"> 
-    <img src="./logo.png" alt="Logo" className = "HomepageLogo"/>
-    <p></p>
+    <div className = "logo-container">
+        <img src="./logo.png" alt="Logo"/>
+        <Label info = "Share Your Experiences"/>
     </div>
  
 </div>

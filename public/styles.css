@@ -2,10 +2,13 @@ body{
     background-color: black;
 }
 
-div h1{
-    font-family: "McLaren", cursive;
-    color: black;
+div p{
+    font-family: "Righteous";
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
+
 
 footer{
     clear: both;
@@ -34,9 +37,32 @@ div Form{
     height: 70px;
 }
 
-.HomepageDisplay{
-    margin-left: 80px;
-    margin-top: 80px;
+.label-container{
+
+    background-color: #feb72b;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    bottom: 80px;
+
+}
+
+
+
+
+.Nav{
+    background-color: #343a40;
+    color: white;
+}
+
+div img{
+    width: 300px;
+    height: 300px;
+}
+
+.logo-container{
+    text-align: center;
 }
 
 .HomepageLogo{
