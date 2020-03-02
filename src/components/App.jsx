@@ -2,9 +2,7 @@ import React, {Component} from "react";
 import Homepage from "./Homepage";
 import Login from "./Login";
 import AccountSetUp from "./AccountSetUp";
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import { Navbar, Nav, Form, Button, FormControl } from "react-bootstrap";
-import  Navigation from "./Navigation";
+import { BrowserRouter, Route } from 'react-router-dom';
 
 class App extends Component { 
   render(){
