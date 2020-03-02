@@ -3,6 +3,8 @@ import Homepage from "./Homepage";
 import Login from "./Login";
 import AccountSetUp from "./AccountSetUp";
 import { BrowserRouter, Route } from 'react-router-dom';
+import RatingPage from './rating-page';
+import RatingsListPage from './rating-list';
 
 class App extends Component { 
   render(){
@@ -28,6 +30,12 @@ class App extends Component {
             return(<Login/>)
           }
          }/>
+
+        <Route path = "/RatingPage" exact render = {
+          () => {
+            return (<RatingPage/>)
+          }
+        }/>
 
         </div>
       </BrowserRouter>
