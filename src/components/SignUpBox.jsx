@@ -123,7 +123,7 @@ class SignUpBox extends Component{
                 <h1 className="join">
                     Join MyCampus Today
                 </h1>
-                <img align="center" src="./logo1.png" alt="Logo" className="image" />
+                <img align="center" src="./logo.png" alt="Logo" className="image" />
                 <h1 className="share">
                     Share Your Experiences
                 </h1>
@@ -156,7 +156,7 @@ class SignUpBox extends Component{
                         <button type="submit" className="FormField_button"> Sign Up </button>
                     </div>
                     <div className="FormField">
-                        <p>Already have a account? <Link to ="/LogIn">LogIn</Link></p>
+                        <p1>Already have a account? <Link to ="/LogIn">LogIn</Link></p1>
                     </div>
                     
                 </form>

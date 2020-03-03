@@ -1,18 +1,36 @@
 import React, {Component} from "react";
 import Navigation from "./Navigation";
 import Label from "./Label";
+import HomepageCard from "./HomepageCard";
+import {ButtonToolBar} from "react-bootstrap";
 
 class Homepage extends Component{
 render(){
 return(
 
-<div>
+<div className = "homepage-container">
     <Navigation/>
-    <div className = "logo-container">
-        <img src="./logo.png" alt="Logo"/>
-        <Label info = "Share Your Experiences"/>
-    </div>
- 
+        <img src="./logo.png" alt="Logo" className = "logo-container"/>
+        <Label info = "Welcome to MyCampus"/>
+            
+               <HomepageCard 
+               img = "" 
+               title = "Find a Professor" 
+               info = "Search for info on your professors" 
+               action = "Find Professor"/>
+               <HomepageCard
+               img = ""
+               title = "View Student Posts"
+               info = "View what students are posting."
+               action = "Get Started"
+               />
+               <HomepageCard
+               img = ""
+               title = "Create a Post"
+               info = "Share an experience with others"
+               action = "Create Post"
+               />
+            
 </div>
 
 

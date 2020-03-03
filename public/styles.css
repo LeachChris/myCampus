@@ -2,10 +2,28 @@ body{
     background-color: black;
 }
 
+.bg-dark{
+    background-color: white;
+}
+
+.cards{
+    display: inline-block;
+    margin: 40px;
+}
+
+.card-container{
+    display: block;
+    margin: 20px;
+}
+
 div p{
     font-family: "Righteous";
     font-size: 30px;
-    color: white;
+    color: #343a40;
+    text-align: center;
+}
+
+.homepage-container{
     text-align: center;
 }
 
@@ -41,28 +59,21 @@ div Form{
 
     background-color: #feb72b;
     width: auto;
-    padding-left: 30px;
-    padding-right: 30px;
     height: 50px;
     bottom: 80px;
+    color: black;
 
 }
-
-
-
 
 .Nav{
     background-color: #343a40;
     color: white;
 }
 
-div img{
-    width: 300px;
-    height: 300px;
-}
 
 .logo-container{
-    text-align: center;
+    width: 300px;
+    height: 300px;
 }
 
 .HomepageLogo{
