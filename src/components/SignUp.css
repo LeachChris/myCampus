@@ -44,6 +44,7 @@
     text-align: center;
     margin-top: 0.5%;
     margin-bottom: -6%;
+    font-family: "Righteous";
     
     
     
@@ -51,6 +52,7 @@
   .join{
     text-align: center;
     margin-bottom: 0.5%;
+    font-family: "Righteous";
  
     
   }
@@ -83,7 +85,7 @@
     top: 10%;
     margin-bottom: -20px;
     margin-right: 25%;
-    color: #5ED0C0;
+    color: #ff0000;
  }
   
  .erroruser{
@@ -91,13 +93,13 @@
   top: 10%px;
   margin-bottom: -20px;
   margin-right: 25%;
-  color: #5ED0C0;
+  color: #ff0000;
 }
   
 .errorpass{
   position: relative;
   top: 10%px;
-  color: #5ED0C0;
+  color: #ff0000;
   margin-bottom: -20px;
   margin-right: 25%;
   
@@ -106,7 +108,7 @@
 .errorcon_pass{
   position: relative;
   top: 10%px;
-  color: #5ED0C0;
+  color: #ff0000;
   margin-bottom: -20px;
   margin-right: 25%;
   
@@ -131,28 +133,24 @@
   }
   
   .FormField_button {
-    background-color: #52C4B9;
+    background-color: #0066ff;
     color: white;
     border: none;
     outline: none;
     border-radius: 25px;
-    padding: 15px 70px;
+    padding: 10px 50px;
     font-size: .8em;
     font-weight: 500;
-    margin-left: 20%;
-    margin-top: 3%;
-    display: block;
+    text-align: center;
+    margin-right: 22%;
+    margin-bottom: 1%;
+
   }
 
-
-  a{
-    color: #616E7F;
-  }
 
   .FormField {
-    margin-right: 39%;
+    font-size: .1em;
+    margin-right: 27%;
+    margin-top: -3%;
    
-  }
-  p{
-    color: #616E7F;
   }

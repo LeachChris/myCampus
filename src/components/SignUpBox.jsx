@@ -156,7 +156,7 @@ class SignUpBox extends Component{
                         <button type="submit" className="FormField_button"> Sign Up </button>
                     </div>
                     <div className="FormField">
-                        <p>Already have a account? <Link to ="/LogIn">LogIn</Link></p>
+                        <p1>Already have a account? <Link to ="/LogIn">LogIn</Link></p1>
                     </div>
                     
                 </form>

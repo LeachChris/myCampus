@@ -6,7 +6,7 @@ import AccountSetUp from "./AccountSetUp";
 import { BrowserRouter, Route } from 'react-router-dom';
 import RatingPage from './rating-page';
 import RatingsListPage from './rating-list';
-import SignUp from "./SignUp";
+
 
 class App extends Component { 
   render(){
@@ -45,11 +45,7 @@ class App extends Component {
           }
         }/>
 
-          <Route path = "/SignUp" exact render = {
-          () => {
-            return (<SignUp/>)
-          }
-        }/>
+  
 
         </div>
       </BrowserRouter>
