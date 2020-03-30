@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import Navigation from "./Navigation";
-import Label from "./Label";
 import HomepageCard from "./HomepageCard";
-import {ButtonToolBar} from "react-bootstrap";
+
 
 class Homepage extends Component{
 render(){
@@ -10,27 +9,29 @@ return(
 
 <div className = "homepage-container">
     <Navigation/>
-        <img src="./logo.png" alt="Logo" className = "logo-container"/>
-        <Label info = "Welcome to MyCampus"/>
-            
-               <HomepageCard 
-               img = "" 
-               title = "Find a Professor" 
-               info = "Search for info on your professors" 
-               action = "Find Professor"/>
-               <HomepageCard
-               img = ""
-               title = "View Student Posts"
-               info = "View what students are posting."
-               action = "Get Started"
-               />
-               <HomepageCard
-               img = ""
-               title = "Create a Post"
-               info = "Share an experience with others"
-               action = "Create Post"
-               />
-            
+        <img src="./Logos/gold_logo_white.png" alt="Logo" className = "logo-container"/>
+        <div>
+            <HomepageCard 
+                img = "" 
+                title = "Find Reviews" 
+                info = "Search for ratings and information on professors, students, and services" 
+                link = ""
+                action = "View Reviews"/>
+            <HomepageCard
+                img = ""
+                title = "View Student Posts"
+                info = "View what students are posting about their college experience"
+                link = "./SignUp"
+                action = "Get Started"
+                />
+            <HomepageCard
+                img = ""
+                title = "Create a Post"
+                info = "Share a college experience for other students to learn from"
+                link = ""
+                action = "Create Post"
+                />
+        </div>
 </div>
 
 

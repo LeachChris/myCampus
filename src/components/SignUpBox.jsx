@@ -123,7 +123,7 @@ class SignUpBox extends Component{
                 <h1 className="join">
                     Join MyCampus Today
                 </h1>
-                <img align="center" src="./logo.png" alt="Logo" className="image" />
+                <img align="center" src="./Logos/gold_logo_two.png" alt="Logo" className="image" />
                 <h1 className="share">
                     Share Your Experiences
                 </h1>

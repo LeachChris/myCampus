@@ -1,5 +1,6 @@
 import React from "react";
 import {Card, Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 function HomepageCard(props){
     
@@ -10,7 +11,9 @@ function HomepageCard(props){
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
                     <Card.Text>{props.info}</Card.Text>
-                    <Button variant="warning">{props.action}</Button>
+                    <Link to = {props.link}>
+                        <Button variant="warning">{props.action}</Button>
+                    </Link>
                 </Card.Body>
             </Card>
         </div>
