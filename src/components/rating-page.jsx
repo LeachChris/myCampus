@@ -52,7 +52,39 @@ class RatingPage extends Component {
           />
         </div>
         <div className="form-input rating">
-          <label htmlFor="rating">Rating:</label>
+          <label htmlFor="rating">Enthusiasm:</label>
+          <StarRating
+            numberOfStars="5"
+            currentRating="0"
+            onClick={this.setRating}
+          />
+        </div>
+        <div className="form-input rating">
+          <label htmlFor="rating">Helpfulness:</label>
+          <StarRating
+            numberOfStars="5"
+            currentRating="0"
+            onClick={this.setRating}
+          />
+        </div>
+        <div className="form-input rating">
+          <label htmlFor="rating">Knowledge:</label>
+          <StarRating
+            numberOfStars="5"
+            currentRating="0"
+            onClick={this.setRating}
+          />
+        </div>
+        <div className="form-input rating">
+          <label htmlFor="rating">Response Time:</label>
+          <StarRating
+            numberOfStars="5"
+            currentRating="0"
+            onClick={this.setRating}
+          />
+        </div>
+        <div className="form-input rating">
+          <label htmlFor="rating">Grade Posting Time:</label>
           <StarRating
             numberOfStars="5"
             currentRating="0"
@@ -63,6 +95,15 @@ class RatingPage extends Component {
           <button type="submit" onClick={this.saveRating}>
             Submit Rating
           </button>
+
+          <div className="form-input rating">
+          <label htmlFor="rating">Overall Rating:</label>
+          <StarRating
+            numberOfStars="5"
+            currentRating="0"
+            onClick={this.setRating}
+          />
+        </div>
         </div>
       </div>
     </div>
