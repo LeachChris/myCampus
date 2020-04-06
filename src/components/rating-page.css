@@ -6,8 +6,8 @@
   
   .heading {
     padding: .5rem;
-    background-color: black;
-    color: white;
+    background-color: #ebb643;
+    color: black;
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
@@ -23,16 +23,16 @@
   
   .form-input input,
   .form-input textarea {
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 100%;
   }
   
   .form-input textarea {
-    height: 5rem;
+    height: 10rem;
   }
-  
+
   .form-input.rating {
-    text-align: right;
+    text-align: left;
   }
   
   .form-input.rating .rating {
@@ -41,9 +41,16 @@
   
   .actions {
     padding: 1rem;
-    text-align: right;
+    text-align: left;
   }
   
-  .actions button {
+  .actions-button {
+    padding: 1rem;
+    text-align: right;
+  }
+
+  .actions-button button {
     padding: .5rem;
   }
+
+  

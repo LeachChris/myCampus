@@ -43,14 +43,6 @@ class RatingPage extends Component {
             onChange={this.handleChange}
           />
         </div>
-        <div className="form-input">
-          <label htmlFor="description">Description:</label>
-          <textarea
-            name="description"
-            id="description"
-            onChange={this.handleChange}
-          />
-        </div>
         <div className="form-input rating">
           <label htmlFor="rating">Enthusiasm:</label>
           <StarRating
@@ -91,19 +83,19 @@ class RatingPage extends Component {
             onClick={this.setRating}
           />
         </div>
-        <div className="actions">
+
+        <div className="form-input">
+          <label htmlFor="description" >Comments:</label>
+          <textarea
+            name="description"
+            id="description"
+            onChange={this.handleChange}
+          />
+        </div>
+        <div className="actions-button">
           <button type="submit" onClick={this.saveRating}>
             Submit Rating
           </button>
-
-          <div className="form-input rating">
-          <label htmlFor="rating">Overall Rating:</label>
-          <StarRating
-            numberOfStars="5"
-            currentRating="0"
-            onClick={this.setRating}
-          />
-        </div>
         </div>
       </div>
     </div>

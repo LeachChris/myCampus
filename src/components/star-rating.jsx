@@ -17,7 +17,7 @@ class StarRating extends Component {
         const stars = ev.target.parentElement.getElementsByClassName('star');
         const hoverValue = ev.target.dataset.value;
         Array.from(stars).forEach(star => {
-            star.style.color = hoverValue >= star.dataset.value ? 'yellow' : 'gray';
+            star.style.color = hoverValue >= star.dataset.value ? '#ebb643' : 'gray';
         });
     };
 
@@ -25,7 +25,7 @@ class StarRating extends Component {
         const stars = this.refs.rating.getElementsByClassName('star');
         Array.from(stars).forEach(star => {
             star.style.color = 
-            this.state.currentRating >= star.dataset.value ? 'yellow' : 'gray';
+            this.state.currentRating >= star.dataset.value ? '#ebb643' : 'gray';
         });
     };
 
