@@ -1,19 +1,14 @@
 body{
-    background-color: black;
-}
-
-.bg-dark{
-    background-color: white;
+    background-color: #f7f7f2;
 }
 
 .cards{
     display: inline-block;
-    margin: 40px;
+    margin: 100px;
 }
 
 .card-container{
     display: block;
-    margin: 20px;
 }
 
 div p{
@@ -25,6 +20,7 @@ div p{
 
 .homepage-container{
     text-align: center;
+    background-color: #f7f7f2;
 }
 
 
@@ -49,10 +45,37 @@ div Form{
     margin-top: 100px;
 }
 
+.loginHeader{
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 1.75rem;
+    margin: 50px;
+    color: #343a40;
+}
+
+.form-container{
+    margin: 40px;
+}
+
+.form-label{
+    color: #343a40;
+}
+
+.form-check-label{
+    font-family: "Righteous";
+    color: #343a40;
+}
+
+#formBasicCheckbox{
+    position: absolute;
+    margin-top: 0.45rem;
+    margin-left: 1.25rem;
+}
+
 .Logo{
     
     width: auto;
-    height: 70px;
+    height: 40px;
 }
 
 .label-container{
@@ -74,6 +97,33 @@ div Form{
 .logo-container{
     width: 300px;
     height: 300px;
+}
+
+.login-logo-container{
+    width: 200px;
+    height: 200px;
+}
+
+.login-page-container{
+    background-color: #f7f7f2;
+}
+    
+.login-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+    height: auto;
+    width: auto;
+    border: #343a40;
+    border-style: solid;
+    border-radius: 40px;
+
+}
+
+.header-logo-container{
+    text-align: center;
+    margin: 5px;
 }
 
 .HomepageLogo{
