@@ -6,6 +6,7 @@ import AccountSetUp from "./AccountSetUp";
 import { BrowserRouter, Route } from 'react-router-dom';
 import RatingPage from './rating-page';
 import RatingsListPage from './rating-list';
+import Post from "./Post";
 
 
 class App extends Component { 
@@ -42,6 +43,12 @@ class App extends Component {
         <Route path = "/RatingPage" exact render = {
           () => {
             return (<RatingPage/>)
+          }
+        }/>
+
+        <Route path = "/Post" exact render = {
+          () => {
+            return (<Post/>)
           }
         }/>
 

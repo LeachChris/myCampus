@@ -149,6 +149,32 @@ input{
     
 }
 
+.btn.btn-secondary{
+    padding: 0.375rem 8rem;
+    margin: 10px;
+}
+
+.post-container{
+    background-color: #f7f7f2;
+    height: auto;
+    width: 500px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+}
+
+.post-center{
+    text-align: center;
+    height: auto;
+}
+
+.post-header{
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px;
+}
+
 .App-intro{
     margin-top: 80px;
 }
