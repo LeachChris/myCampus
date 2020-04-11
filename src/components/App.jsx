@@ -7,6 +7,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import RatingPage from './rating-page';
 import RatingsListPage from './rating-list';
 import Post from "./Post";
+import PostsView from "./PostsView";
 
 
 class App extends Component { 
@@ -52,7 +53,11 @@ class App extends Component {
           }
         }/>
 
-  
+        <Route path = "/viewPost" exact render = {
+          () => {
+            return (<PostsView/>)
+          }
+        }/>
 
         </div>
       </BrowserRouter>

@@ -149,6 +149,10 @@ input{
     
 }
 
+.btn{
+    margin-left: 60px;
+}
+
 .btn.btn-secondary{
     padding: 0.375rem 8rem;
     margin: 10px;
@@ -238,4 +242,22 @@ input{
 .SearchBar li:hover {
     text-decoration: underline;
     background-color: rgba(128, 128, 128, 0.20);
+}
+
+.text-area-post{
+    display: inline;
+}
+
+.view-container{
+    background-color: #f7f7f2;
+    height: auto;
+    width: 750px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+}
+
+.input-group{
+    margin-top: 20px;
 }

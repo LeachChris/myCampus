@@ -10,7 +10,7 @@ import PostsView from "./components/PostsView";
 
 
 
-ReactDOM.render(<PostsView />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
