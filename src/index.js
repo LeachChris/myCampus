@@ -5,11 +5,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './custom.scss';
 import App from "./components/App";
+import PostsView from "./components/PostsView";
 
 
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<PostsView />, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
