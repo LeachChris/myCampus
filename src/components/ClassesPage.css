@@ -1,0 +1,74 @@
+.classes-form {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-style: solid;
+  }
+  
+  .heading {
+    padding: .5rem;
+    background-color: #ebb643;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-input2 {
+    margin: 1rem;
+  }
+
+  .form-input3 {
+    margin: 1rem;
+  }
+  
+  .form-input2 label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+  }
+
+  .form-input3 label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+  }
+  
+  .form-input2 input,
+  .form-input2 textarea {
+    font-size: 1rem;
+    width: 25%;
+  }
+  
+  .form-input3 input,
+  .form-input3 textarea {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .form-input3 textarea {
+    height: 10rem;
+  }
+
+  .form-input.rating {
+    text-align: left;
+  }
+  
+  .form-input.rating .rating {
+    font-size: 2rem;
+  }
+  
+  .actions {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .actions-button {
+    padding: 1rem;
+    text-align: right;
+  }
+
+  .actions-button button {
+    padding: .5rem;
+  }
+
+  
