@@ -7,34 +7,60 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-const postString = "";
-const commentString = "";
-const profString = "";
-const univString = "";
+const routes = require('./routes/api');
 
-function makePost(p) {
-    p = postString;
+const postString = "test";
+const commentString = "test";
+const profString = "test";
+const univString = "test";
+
+// MONGODB ACCOUNT INFO:
+// Usermame: MyCampusAdmin
+// Password: AdminForMyCampus
+
+// MongoDB URI
+const MONGODB_URI = 'mongodb+srv://MyCampusAdmin:AdminForMyCampus@mycampus-whyic.mongodb.net/MyCampus?retryWrites=true&w=majority';
+
+mongoose.connect(MONGODB_URI || 'mongodb://localhost/MyCampus', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+mongoose.connection.on('connected', () => {
+    console.log('Mongoose is connected');
+});
+
+// Data parsing
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+// HTTP request logger
+app.use(morgan('tiny'));
+app.use('/api', routes);
+
+//function makePost(p) {
+    // p = postString;
 
     // postData
-    const postData = {
-        post: p,
-        univID: 1,
-        numLikes: 0
-    };
+    // const postData = {
+    //     post: p,
+    //     univID: 1,
+    //     numLikes: 0
+    // };
 
     // Post Save
-    const newPost = new Post(postData);  // Instance of the new model
+    // const newPost = new Post(postData);  // Instance of the new model
 
     // Post Save
-    newPost.save((error) => {
-        if (error) {
-            console.log('Something went wrong with post save');
-        }
-        else {
-            console.log('Post data has ben saved');
-        }
-    });
-}
+    //  newPost.save((error) => {
+    //      if (error) {
+    //          console.log('Something went wrong with post save');
+    //      }
+    //      else {
+    //          console.log('Post data has ben saved');
+    //      }
+    //  });
+//}
 
 function makeComment(c) {
     c = commentString;
@@ -107,37 +133,7 @@ function addUniv(u) {
     });
 }
 
-// MONGODB ACCOUNT INFO:
-// Usermame: MyCampusAdmin
-// Password: AdminForMyCampus
 
-// MongoDB URI
-const MONGODB_URI = 'mongodb+srv://MyCampusAdmin:AdminForMyCampus@mycampus-whyic.mongodb.net/MyCampus?retryWrites=true&w=majority';
-
-mongoose.connect(MONGODB_URI || 'mongodb://localhost/MyCampus', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
-mongoose.connection.on('connected', () => {
-    console.log('Mongoose is connected');
-})
-
-// POST SET UP
-// Post Schema Declaration 
- const SchemaPost = mongoose.Schema;
- // Post Schema
- const PostSchema = new SchemaPost ({
-     post: String,
-     date: {
-         type: String,
-         default: Date.now()
-     },
-     univID: Number,
-     numLikes: Number
- });
- // Post Model
- const Post = mongoose.model('Post', PostSchema);  // 'Post' refers to name of collection
 
  // COMMENT SET UP
  // Comment Schema Declaration
@@ -180,34 +176,13 @@ mongoose.connection.on('connected', () => {
 
 
 //TESTING FUNCTIONS
-/*
-makePost(postString);
-makeComment(commentString);
-addProf(profString);
-addUniv(univString); */
+// makePost(postString);
+// makeComment(commentString);
+// addProf(profString);
+// addUniv(univString); 
 
-// HTTP request logger
-app.use(morgan('tiny'));
 
-// Routes
-app.get('/posts', (req, res) => {
-    Post.find( {  })
-        .then((data) => {
-            console.log('Data: ', data);
-            res.json(data);
-        })
-        .catch((error) => {
-            console.log('Error: ', daerrorta);
-        });
-});
 
-app.get('/api/name', (req, res) => {
-    const data = {
-        username: 'name',
-        age: 20
-    };
-    res.json(data);
-});
 
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));
 
