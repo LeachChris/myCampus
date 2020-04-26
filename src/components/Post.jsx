@@ -1,6 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import {Button} from 'react-bootstrap';
+import Navigation from "./Navigation";
+
+
 
 class Post extends React.Component {
 
@@ -46,6 +49,8 @@ render() {
     
 return(
     
+<div>
+    <Navigation/>
 <div className = "post-center">
 <form onSubmit = {this.submit}>
 <div className="post-container">
@@ -72,6 +77,7 @@ return(
     <Button variant = "primary">Post</Button> */}
 </div>
 </form>
+</div>
 </div>
 )
 }
