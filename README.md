@@ -1,3 +1,12 @@
+To run this app in your local environment:
+
+1. Run npm build in the terminal under the project folder directory.
+2. Run npm start in the terminal.
+3. Web application should start up under (http://localhost:3000)
+
+
+<!------------------------------------------------------------------------------------------------->
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

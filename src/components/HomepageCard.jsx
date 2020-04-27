@@ -12,7 +12,7 @@ function HomepageCard(props){
                     <Card.Title>{props.title}</Card.Title>
                     <Card.Text>{props.info}</Card.Text>
                     <Link to = {props.link}>
-                        <Button variant="warning">{props.action}</Button>
+                        <Button variant="warning" onClick = {props.onClick}>{props.action}</Button>
                     </Link>
                 </Card.Body>
             </Card>
