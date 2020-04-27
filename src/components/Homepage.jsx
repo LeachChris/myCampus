@@ -2,11 +2,14 @@ import React, {Component} from "react";
 import Navigation from "./Navigation";
 import HomepageCard from "./HomepageCard";
 import Post from "./Post";
+import SearchBar from "./SearchBar"
 
 
 class Homepage extends Component{
 
+  
 render(){
+
 return(
 
 <div className = "homepage-container">
@@ -15,10 +18,10 @@ return(
         <div>
             <HomepageCard 
                 img = "" 
-                title = "Share Reviews" 
-                info = "Share reviews of campus services, classes, and professors." 
-                link = "./RatingPage"
-                action = "Leave a Review"
+                title = "Search for Your Campus" 
+                info = "See what other students are sharing about your campus." 
+                link = "./AccountSetUp"
+                action = "Search Now"
                 />
             <HomepageCard
                 img = ""
