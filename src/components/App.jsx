@@ -9,10 +9,22 @@ import RatingList from './rating-list'
 import ClassesPage from './ClassesPage';
 import Post from "./Post";
 import PostsView from "./PostsView";
+import { CognitoUserPool } from 'amazon-cognito-identity-js';
+// May need to run this command: npm i amazon-cognito-identity-js
+// Also: npm audit fix
 
 
 class App extends Component { 
+
   render(){
+
+      // Cognito stuff
+      const poolData = {
+        UserPoolId: 'us-east-2_qbeVvHEBV',
+        ClientId: '335gstdclctuliqlrpkfi931n4'
+      };
+
+      const userPool = new CognitoUserPool (poolData);
 
     return (      
       <BrowserRouter>
