@@ -7,8 +7,9 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import RatingPage from './rating-page';
 import RatingList from './rating-list'
 import ClassesPage from './ClassesPage';
-import Post from "./Post";
+import CreatePost from "./CreatePost";
 import PostsView from "./PostsView";
+import  DisplayPost  from "./DisplayPost";
 
 
 class App extends Component { 
@@ -20,7 +21,7 @@ class App extends Component {
 
          <Route path ="/" exact render = {
            () => {
-             return(<Homepage/>)
+             return(<DisplayPost/>)
            }
          }/>
 
@@ -62,7 +63,7 @@ class App extends Component {
 
         <Route path = "/Post" exact render = {
           () => {
-            return (<Post/>)
+            return (<CreatePost/>)
           }
         }/>
 

@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 
 
-class Post extends React.Component {
+class CreatePost extends React.Component {
 
 
 state = {
@@ -83,4 +83,4 @@ return(
 }
 }
 
-export default Post;
+export default CreatePost;

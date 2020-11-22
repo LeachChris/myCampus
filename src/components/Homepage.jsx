@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Navigation from "./Navigation";
 import HomepageCard from "./HomepageCard";
-import Post from "./Post";
+import CreatePost from "./CreatePost";
 import SearchBar from "./SearchBar"
 
 
