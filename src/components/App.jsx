@@ -2,10 +2,10 @@ import React, {Component} from "react";
 import Homepage from "./Homepage";
 import Login from "./Login";
 import SignUp from"./SignUp";
-import AccountSetUp from "./AccountSetUp";
+import AccountSetUp from "./SignUpComponent/AccountSetUp";
 import { BrowserRouter, Route } from 'react-router-dom';
 import RatingPage from './rating-page';
-import RatingList from './rating-list'
+import RatingList from './RatingComponent/rating-list'
 import ClassesPage from './ClassesPage';
 import CreatePost from "./CreatePost";
 import PostsView from "./PostsView";

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import StarRating from "./star-rating";
+import StarRating from "./RatingComponent/star-rating";
 import Navigation from "./Navigation";
 import "./ClassesPage.css";
 

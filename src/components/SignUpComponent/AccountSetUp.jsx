@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import UniversityConfirm from './UniversityConfirm';
+import UniversityConfirm from '../SearchComponent/UniversityConfirm';
 import SearchBar from './SearchBar';
 import universities from './universities';
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 
 
 class AccountSetUp extends Component{
