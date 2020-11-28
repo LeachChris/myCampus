@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { HashRouter as Router, Route, Link, NavLink} from "react-router-dom";
-import Navigation from "./Navigation";
-import Login from "./Login";
+import Navigation from "../Navigation";
+import Login from "../LoginComponent/Login";
 import SignUpBox from  "./SignUpBox";
 import "./SignUp.css";
 

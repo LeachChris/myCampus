@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 import HomepageCard from "./HomepageCard";
-import CreatePost from "./CreatePost";
-import SearchBar from "./SearchBar"
+import CreatePost from "../PostComponent/CreatePost";
+import SearchBar from "../SearchComponent/SearchBar";
 
 
 class Homepage extends Component{

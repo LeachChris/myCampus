@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Button} from "react-bootstrap";
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 
 class PostsView extends Component{
 

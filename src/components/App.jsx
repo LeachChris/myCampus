@@ -1,15 +1,15 @@
 import React, {Component} from "react";
-import Homepage from "./Homepage";
-import Login from "./Login";
-import SignUp from"./SignUp";
+import Homepage from "./HomePageComponent/Homepage";
+import Login from "./LoginComponent/Login";
+import SignUp from"./SignUpComponent/SignUp";
 import AccountSetUp from "./SignUpComponent/AccountSetUp";
 import { BrowserRouter, Route } from 'react-router-dom';
-import RatingPage from './rating-page';
+import RatingPage from './RatingComponent/rating-page';
 import RatingList from './RatingComponent/rating-list'
 import ClassesPage from './ClassesPage';
-import CreatePost from "./CreatePost";
-import PostsView from "./PostsView";
-import  DisplayPost  from "./DisplayPost";
+import CreatePost from "./PostComponent/CreatePost";
+import PostsView from "./PostComponent/PostsView";
+import  DisplayPost  from "./PostComponent/DisplayPost";
 
 
 class App extends Component { 
@@ -21,7 +21,7 @@ class App extends Component {
 
          <Route path ="/" exact render = {
            () => {
-             return(<DisplayPost/>)
+             return(<Homepage/>)
            }
          }/>
 
@@ -70,6 +70,12 @@ class App extends Component {
         <Route path = "/viewPost" exact render = {
           () => {
             return (<PostsView/>)
+          }
+        }/>
+
+        <Route path = "/displayPost" exact render = {
+          () => {
+            return (<DisplayPost/>)
           }
         }/>
 

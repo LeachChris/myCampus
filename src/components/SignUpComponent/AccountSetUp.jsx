@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import "../App.css";
 import UniversityConfirm from '../SearchComponent/UniversityConfirm';
-import SearchBar from './SearchBar';
-import universities from './universities';
+import SearchBar from '../SearchComponent/SearchBar';
+import universities from '../SearchComponent/universities';
 import Navigation from "../Navigation";
 
 

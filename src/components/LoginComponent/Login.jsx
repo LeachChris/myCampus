@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Form, Button, Nav} from "react-bootstrap";
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 import {Link} from "react-router-dom";
 
 class Login extends Component{

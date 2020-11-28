@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import{ Link } from "react-router-dom" 
 import "./SignUp.css";
-import Timeline from"./Timeline.jsx";
+import Timeline from"../Timeline.jsx";
 
 
 class SignUpBox extends Component{

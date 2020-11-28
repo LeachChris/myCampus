@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import StarRating from "./star-rating";
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 import "./rating-page.css";
 
 class RatingPage extends Component {
