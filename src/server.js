@@ -151,18 +151,23 @@ function addUniv(u) {
  // Comment Model
  const Comment = mongoose.model('Comment', CommentSchema);
 
- //PROF SET UP
- // Prof Schema Declaration
- const SchemaProf = mongoose.Schema;
- // Professor Schema
- const ProfSchema = new SchemaProf ({
-     name: String,
-     univID: Number,
-     department: String,
-     classes: String
- });
- // Professor Model
- const Prof = mongoose.model('Professor', ProfSchema);
+ 
+
+//  // THIS CODE HAS BEEN MOVED TO PROJS.JS
+//  //PROF SET UP
+//  // Prof Schema Declaration
+//  const SchemaProf = mongoose.Schema;
+//  // Professor Schema
+//  const ProfSchema = new SchemaProf ({
+//      name: String,
+//      univID: Number,
+//      department: String,
+//      classes: String
+//  });
+//  // Professor Model
+//  const Prof = mongoose.model('Professor', ProfSchema);
+
+
  // UNIV SET UP
  // University Schema Declaration
  const SchemaUniv = mongoose.Schema;

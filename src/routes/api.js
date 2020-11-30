@@ -3,12 +3,26 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const https = require("https");
 
-const Post = require('../models/post');  // This is the model to use
+const Post = require('../models/post');  // This is the model to use for posts
+const Profs = require('../models/profs');  // This is the model to use for posts
+
 const { on } = require('process');
 
-//Routes
+// Post Route
 router.get('/', (req, res) => {
     Post.find( {  })
+        .then((data) => {
+            //console.log('Data: ', data);
+            res.json(data);
+        })
+        .catch((error) => {
+            console.log('Error: ', daerrorta);  
+        });
+});
+
+// Profs Route
+router.get('/profs', (req, res) => {
+    Profs.find( {  })
         .then((data) => {
             //console.log('Data: ', data);
             res.json(data);
