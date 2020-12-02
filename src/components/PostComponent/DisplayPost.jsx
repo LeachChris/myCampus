@@ -1,5 +1,14 @@
 import React from "react";
 import axios from "axios";
+import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Divider from '@material-ui/core/Divider';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
+
 
 class DisplayPost extends React.Component {
 
@@ -23,23 +32,43 @@ class DisplayPost extends React.Component {
         .catch(() => {
             alert("error receving data");
         })
-    }
+    };
+
+
 
     displayBlogPost = (posts) => {
-
+        
         if (!posts.length) return null;
 
         return posts.map((post, index) => (
             <div key={index}>
-            <h3>{post.date}</h3>
-            <p>{post.post}</p>
+                <List>
+                    <ListItem alignItems="flex-start">
+                        <ListItemAvatar>
+                            <Avatar alt="Profile" src="https://image.shutterstock.com/z/stock-vector-man-avatar-profile-picture-vector-illustration-eps-229692004.jpg"/>
+                        </ListItemAvatar>
+                        <ListItemText
+                        primary={post.date}
+                        secondary={
+                            <React.Fragment>
+                                <Typography 
+                                component="span"
+                                variant="body2"
+                                color="textPrimary"
+                                >
+                                </Typography>
+                            </React.Fragment>
+                        }
+                        />
+                    </ListItem>
+                </List>
             </div>
         ))
     };
 
     render(){
         return(
-            <div className="post-">
+            <div className>
                 {this.displayBlogPost(this.state.posts)}
             </div>
         )

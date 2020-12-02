@@ -2,31 +2,64 @@ import React, { Component } from 'react';
 import StarRating from "./star-rating";
 import Navigation from "../Navigation";
 import "./rating-page.css";
+import axios from 'axios';
 
 class RatingPage extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      description: '',
-      rating: 0,
-      user: ''
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     name: '',
+  //     description: '',
+  //     rating: 0,
+  //     user: ''
+  //   };
+  // }
 
 
 
-  handleChange = ev => {
+  // handleChange = ev => {
+  //   this.setState({
+  //     [ev.target.name]: ev.target.value
+  //   });
+  // };
+
+  // setRating = rating => {
+  //   this.setState({ rating: rating });
+  // };
+
+  state = {
+    rating: '',
+  };
+
+  handleChange = (event) => {
+    const target = event.target;
+    const name = target.name;
+    const value = target.value;
     this.setState({
-      [ev.target.name]: ev.target.value
+      [name]: value
     });
   };
 
-  setRating = rating => {
-    this.setState({ rating: rating });
-  };
+  submit = (event) => {
+    event.preventDefault();
 
+    const payload = {
+      rating: this.state.rating
+    };
+
+    axios({
+      url: '/api/save',
+      method: 'POST',
+      data: payload
+    })
+    .then(() => {
+      console.log(('Rating data has been sent to the server'));
+    })
+    .catch(() => {
+      console.log('Internal server error');
+    });
+  };
 
   render() {
     return (
@@ -89,11 +122,12 @@ class RatingPage extends Component {
           <textarea
             name="description"
             id="description"
+            placeholder="Give a description of your experience"
             onChange={this.handleChange}
           />
         </div>
         <div className="actions-button">
-          <button type="submit" onClick={this.saveRating}>
+          <button type="submit" onClick={this.submit}>
             Submit Rating
           </button>
         </div>
