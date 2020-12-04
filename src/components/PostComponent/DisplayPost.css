@@ -1,0 +1,12 @@
+.displayPost{
+    width: '100%';
+    text-align: center;
+}
+
+.displayPostInline{
+    display: inline;
+}
+
+.MuiListItem-root{
+    text-align: center;
+}
