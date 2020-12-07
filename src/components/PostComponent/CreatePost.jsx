@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import {Button} from 'react-bootstrap';
 import Navigation from "../Navigation";
-
+import PostConfirm from "./PostConfirm";
 
 
 class CreatePost extends React.Component {
@@ -72,7 +72,7 @@ return(
             >
         </textarea>
     </div>
-    <button>Submit</button>
+    <PostConfirm text="Post Created"/>
     {/*<Button variant = "secondary">Cancel</Button>
     <Button variant = "primary">Post</Button> */}
 </div>

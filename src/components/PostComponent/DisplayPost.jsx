@@ -7,6 +7,19 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      width: "100%",
+      maxWidth: "36ch",
+      backgroundColor: theme.palette.background.paper
+    },
+    inline: {
+      display: "inline"
+    }
+  }));
+  
 
 class DisplayPost extends React.Component {
 
@@ -40,13 +53,13 @@ class DisplayPost extends React.Component {
 
         return posts.map((post, index) => (
             <div key={index}>
-                <List className="displayPost">
+                <List className={useStyles}>
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>
                             <Avatar alt="Profile" src="https://image.shutterstock.com/z/stock-vector-man-avatar-profile-picture-vector-illustration-eps-229692004.jpg"/>
                         </ListItemAvatar>
                         <ListItemText
-                        primary={post.date}
+                        primary={"Username"}
                         secondary={
                             <React.Fragment>
                                 <Typography 
